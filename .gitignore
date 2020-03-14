@@ -2,3 +2,8 @@
 *.bz2
 options.ini
 newsyslog.conf
+._*
+.~lock.*
+.buildpath
+.DS_Store
+.idea*
