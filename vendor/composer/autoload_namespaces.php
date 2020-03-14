@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'OnlineCity' => array($baseDir . '/src'),
+    'OnlineCity' => array($vendorDir . '/its/php-smpp/src'),
 );

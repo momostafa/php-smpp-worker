@@ -1,1 +1,58 @@
-[]
+[
+    {
+        "name": "its/php-smpp",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/agladkov/php-smpp.git",
+            "reference": "5e68a5ee531f99b1793d0c666646c361909390e9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/agladkov/php-smpp/zipball/5e68a5ee531f99b1793d0c666646c361909390e9",
+            "reference": "5e68a5ee531f99b1793d0c666646c361909390e9",
+            "shasum": ""
+        },
+        "require": {
+            "ext-sockets": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2019-11-16T09:59:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.0-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "OnlineCity": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "OnlineCity",
+                "email": "hd@onlinecity.dk",
+                "homepage": "http://www.onlinecity.dk/"
+            },
+            {
+                "name": "Anton Gladkov",
+                "email": "agladkov@it-lame.ru",
+                "homepage": "http://www.it-lame.ru"
+            }
+        ],
+        "description": "PHP SMPP client library",
+        "homepage": "http://github.com/agladkov/php-smpp",
+        "keywords": [
+            "lib",
+            "php",
+            "smpp"
+        ]
+    }
+]

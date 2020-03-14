@@ -6,12 +6,26 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit35a351b83cdbe982e1c231b23dad54c1
 {
+    public static $prefixLengthsPsr4 = array (
+        'V' => 
+        array (
+            'Vemid\\SmppWorker\\' => 17,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Vemid\\SmppWorker\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/SmppWorker',
+        ),
+    );
+
     public static $prefixesPsr0 = array (
         'O' => 
         array (
             'OnlineCity' => 
             array (
-                0 => __DIR__ . '/../..' . '/src',
+                0 => __DIR__ . '/..' . '/its/php-smpp/src',
             ),
         ),
     );
@@ -19,6 +33,8 @@ class ComposerStaticInit35a351b83cdbe982e1c231b23dad54c1
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit35a351b83cdbe982e1c231b23dad54c1::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit35a351b83cdbe982e1c231b23dad54c1::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit35a351b83cdbe982e1c231b23dad54c1::$prefixesPsr0;
 
         }, null, ClassLoader::class);

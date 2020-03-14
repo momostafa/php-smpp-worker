@@ -4,12 +4,69 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "901fc3a3bf1cbf367e9381c63998dbbf",
-    "packages": [],
+    "content-hash": "a018006b057447657aa2fce498f4929f",
+    "packages": [
+        {
+            "name": "its/php-smpp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/agladkov/php-smpp.git",
+                "reference": "5e68a5ee531f99b1793d0c666646c361909390e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/agladkov/php-smpp/zipball/5e68a5ee531f99b1793d0c666646c361909390e9",
+                "reference": "5e68a5ee531f99b1793d0c666646c361909390e9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sockets": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "OnlineCity": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "OnlineCity",
+                    "email": "hd@onlinecity.dk",
+                    "homepage": "http://www.onlinecity.dk/"
+                },
+                {
+                    "name": "Anton Gladkov",
+                    "email": "agladkov@it-lame.ru",
+                    "homepage": "http://www.it-lame.ru"
+                }
+            ],
+            "description": "PHP SMPP client library",
+            "homepage": "http://github.com/agladkov/php-smpp",
+            "keywords": [
+                "lib",
+                "php",
+                "smpp"
+            ],
+            "time": "2019-11-16T09:59:51+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "its/php-smpp": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
