@@ -7,3 +7,4 @@ newsyslog.conf
 .buildpath
 .DS_Store
 .idea*
+/vendor
