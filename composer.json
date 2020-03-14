@@ -4,6 +4,7 @@
     "license": "MIT",
     "description": "PHP SMPP client library",
     "keywords": ["smpp", "php", "lib"],
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Vemid",
