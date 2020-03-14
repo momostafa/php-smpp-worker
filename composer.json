@@ -1,6 +1,10 @@
 {
     "name": " darkovesic/php-smpp-worker",
     "type": "library",
+    "description": "PHP SMPP client library",
+    "keywords": ["smpp", "php", "lib"],
+    "homepage": "http://github.com/darkovesic/php-smpp-worker",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2"
     },
