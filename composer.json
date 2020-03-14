@@ -1,5 +1,5 @@
 {
-    "name": " darkovesic/php-smpp-worker",
+    "name": "darkovesic/php-smpp-worker",
     "type": "library",
     "license": "MIT",
     "description": "PHP SMPP client library",
