@@ -20,17 +20,15 @@ class SmsFactory
     protected $queueManagerPid;
 
     public static $pidFile = 'parent.pid';
-    public static $optionsFile = 'options.ini';
 
-    public function __construct()
+    public function __construct(array $options)
     {
-        $this->senderPids = array();
+        $this->senderPids = [];
+        $this->options = $options;
     }
 
     public function startAll()
     {
-        $this->options = parse_ini_file(self::$optionsFile, true);
-
         if ($this->options === false) {
             throw new \InvalidArgumentException('Invalid options ini file, can not start');
         }
@@ -67,7 +65,7 @@ class SmsFactory
                     } else {
                         $worker = new SmsSender($this->options);
                     }
-                    $this->debug("Constructed: " . get_class($worker) . " with pid: " . getmypid());
+                    $this->debug(sprintf('Constructed: %s with pid: %s', get_class($worker), getmypid()));
                     $worker->run();
                     break;
                 default:
@@ -137,8 +135,6 @@ class SmsFactory
                     $i--;
                     $this->debug("Will respawn new $c to cover loss");
 
-                    // Check if any other children died (they might fail simultaneously)
-                    // For this to work children must be reaped first (zombies still has the same SID)
                     $mySid = posix_getsid(getmypid());
                     if (isset($this->queueManagerPid)) {
                         $sid = posix_getsid($this->queueManagerPid);
@@ -153,7 +149,7 @@ class SmsFactory
                         if ($sid === false || $sid !== $mySid) {
                             unset($this->receiverPid);
                             $i--;
-                            $this->debug("Will *also* respawn new SmsReceiver to cover loss");
+                            $this->debug('Will *also* respawn new SmsReceiver to cover loss');
                         }
                     }
 

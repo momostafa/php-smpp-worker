@@ -173,7 +173,7 @@ class SmsReceiver
 		foreach ($this->dlrs as $dlrId => $dlr) {
 		    /* @var $dlr SmppDeliveryReceipt */
 			if ($dlr->doneDate < (time()-3600)) {
-				$this->debug('Could not match SMSC ID: '.$dlr->id.' to a SMS ID within an hour. Giving up.');
+				$this->debug(sprintf('Could not match SMSC ID: %s to a SMS ID within an hour. Giving up.', $dlr->id));
 				unset($this->dlrs[$dlrId]);
 				continue;
 			}
