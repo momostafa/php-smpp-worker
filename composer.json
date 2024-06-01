@@ -1,5 +1,5 @@
 {
-  "darkovesic/php-smpp-worker",
+  "darkovesic/php-smpp-worker:develop",
   "description": "PHP SMPP client library",
   "keywords": [
     "smpp", 
