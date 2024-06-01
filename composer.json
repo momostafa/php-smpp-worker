@@ -1,9 +1,10 @@
 {
-  "darkovesic/php-smpp-worker:develop",
+  "name": "darkovesic/php-smpp-worker",
   "description": "PHP SMPP client library",
+  "type": "library",
   "keywords": [
-    "smpp", 
-    "php", 
+    "smpp",
+    "php",
     "lib"
   ],
   "autoload": {
