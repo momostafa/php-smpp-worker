@@ -1,30 +1,41 @@
 {
-    "name": "darkovesic/php-smpp-worker",
-    "type": "library",
-    "license": "MIT",
-    "description": "PHP SMPP client library",
-    "keywords": ["smpp", "php", "lib"],
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "Vemid",
-            "email": "darkovesic3@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^8.0"
-    },
-    "require-dev": {
-    },
-    "suggest": {
-    },
-    "autoload": {
-        "psr-4": {
-            "Vemid\\SmppWorker\\": "src/SmppWorker"
-        }
-    },
-    "extra": {
-
-        }
+  "darkovesic/php-smpp-worker",
+  "description": "",
+  "keywords": [
+    "smpp", 
+    "php", 
+    "lib"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vemid\\SmppWorker\\": "src/SmppWorker/"
     }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vemid",
+      "email": "darkovesic3@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+  },
+  "autoload-dev": {
+    "psr-4": {
+    }
+  },
+  "scripts": {
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+  }
 }
